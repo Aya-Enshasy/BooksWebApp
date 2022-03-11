@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('numberOfPage');
             $table->string('languages');
             $table->string('image');
+            $table->foreignIdFor(\App\Models\Categories::class);
             $table->timestamps();
         });
     }
